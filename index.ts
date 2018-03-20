@@ -18,3 +18,4 @@ export function getServer() {
     return server;
 }
 
+getServer();
