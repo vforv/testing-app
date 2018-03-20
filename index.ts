@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 
 
 export function getServer() {
-    const server = serv.listen(3000, () => {
+    const server = serv.listen(process.env.PORT || 3000, () => {
         console.log(`App listening on port 3000!`);
     });
 
